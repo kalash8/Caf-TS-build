@@ -1,4 +1,3 @@
-// app/vendor/orders/page.js
 "use client";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -44,16 +43,19 @@ export default function OrdersManagement() {
     <div>
       <NavbarVendor />
       <div className="p-4 pt-20">
-        <h1 className="text-2xl mb-4">Manage Orders</h1>
+        <h1 className="text-2xl font-bold text-center mb-4">Manage Orders</h1>
         {orders.map(order => (
-          <div key={order._id} className="bg-white p-4 m-2 rounded shadow">
+          <div key={order._id} className="bg-white p-4 m-2 mb-4 border-t rounded-xl shadow-2xl">
             <OrderCard order={order} />
-            <select value={order.status} onChange={(e) => updateStatus(order._id, e.target.value)} className="ml-4 p-1 border">
+            
+            <h3 className='ml-4 p-1'>User: {order.userId?.name || 'Unknown'} | Order #{order._id.slice(-6)}</h3>
+            <select value={order.status} onChange={(e) => updateStatus(order._id, e.target.value)} className="ml-4 p-1 rounded-xl border-b">
               <option>Received</option>
               <option>Preparing</option>
               <option>Ready</option>
               <option>Completed</option>
             </select>
+            
           </div>
         ))}
       </div>
