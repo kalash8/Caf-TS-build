@@ -1,14 +1,15 @@
 import pageBg from '../Assets/pagebg.png';
 import iconn from '../Assets/homeicon.png'
+import bottomicon from '../Assets/AdobeStock_906547860.png'
 
 export default function Home() {
   return (
     <main 
-      className="relative flex min-h-screen flex-col items-center justify-center pb-20 pr-6 pl-6 bg-no-repeat"
+      className="relative flex min-h-screen flex-col items-center justify-center bg-no-repeat"
     >
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1]" 
-        style={{ backgroundImage: `url(${pageBg.src})`, opacity: 0.1 }}
+        // style={{ backgroundImage: `url(${pageBg.src})`, opacity: 0.1 }}
       ></div>
       <img 
         src={iconn.src} 
@@ -34,6 +35,11 @@ export default function Home() {
           Cook Food
         </a>
       </div>
+      <img 
+        src={bottomicon.src} 
+        alt="CNX Cafe Logo" 
+        className="w-full md:w-80 mt-26" 
+      />
     </main>
   );
 }
