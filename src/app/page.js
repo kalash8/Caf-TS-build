@@ -5,7 +5,7 @@ import bottomicon from '../Assets/AdobeStock_906547860.png'
 export default function Home() {
   return (
     <main 
-      className="relative flex min-h-screen flex-col items-center space-between bg-no-repeat mt-0"
+      className="relative flex min-h-screen flex-col items-center space-between bg-no-repeat mt-5"
     >
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1]" 
@@ -22,14 +22,14 @@ export default function Home() {
         <br/>
         <a 
           href="/user/login" 
-          className="inline-block px-6 py-3 mt-4 text-white rounded-lg font-semibold hover:scale-105 transition-transform duration-200 shadow-md"
+          className="inline-block px-6 py-3 mt-4 text-white rounded-full font-semibold hover:scale-105 transition-transform duration-200 shadow-md"
           style={{ backgroundColor: '#003D5D', ':hover': { backgroundColor: '#005A8A' } }}
         >
           Order Food
         </a>
         <a 
           href="/vendor/login" 
-          className="inline-block px-6 py-3 mt-4 text-white rounded-lg font-semibold hover:scale-105 transition-transform duration-200 shadow-md"
+          className="inline-block px-6 py-3 mt-4 text-white rounded-full font-semibold hover:scale-105 transition-transform duration-200 shadow-md"
           style={{ backgroundColor: '#003D5D', ':hover': { backgroundColor: '#005A8A' } }}
         >
           Cook Food
