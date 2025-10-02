@@ -5,7 +5,7 @@ import bottomicon from '../Assets/AdobeStock_906547860.png'
 export default function Home() {
   return (
     <main 
-      className="relative flex min-h-screen flex-col items-center justify-center bg-no-repeat"
+      className="relative flex min-h-screen flex-col items-center space-between bg-no-repeat mt-0"
     >
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1]" 
