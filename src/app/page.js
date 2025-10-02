@@ -38,7 +38,7 @@ export default function Home() {
       <img 
         src={bottomicon.src} 
         alt="CNX Cafe Logo" 
-        className="w-full md:w-80 mt-26" 
+        className="w-full md:w-80 mt-8" 
       />
     </main>
   );
